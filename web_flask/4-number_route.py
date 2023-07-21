@@ -41,4 +41,11 @@ def python_route(text="is cool"):
     return "Python %s" % text
 
 
-@app.route(
+@app.route("/number/<int:n>", strict_slashes=False)
+def number_route(n):
+    """displays /number/<n> web app route"""
+    return "%d is a number" % n
+
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000)
