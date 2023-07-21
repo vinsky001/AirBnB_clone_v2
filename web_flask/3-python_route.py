@@ -32,7 +32,8 @@ def c_route(text):
     return "C %s" % text
 
 
-@app.route("/python/<text>", strict_slashes=False)
+@app.route("/python", strict_slashes=False)
+@app.route("/python/<string:text>", strict_slashes=False)
 def python_route(text="is cool"):
     """displays the value of /python/<text>"""
     text = text.replace("_", " ")
