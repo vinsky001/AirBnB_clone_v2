@@ -8,6 +8,9 @@ Routes:	/: display “Hello HBNB!”
 from flask import Flask
 
 
+app = Flask(__name__)
+
+
 @app.route("/", strict_slashes=False)
 def hello_route():
     """function for web app route"""
@@ -15,7 +18,7 @@ def hello_route():
 
 
 @app.route("/hbnb", strict_slashes=False)
-def Hbnb_route():
+def hbnb_route():
     """displays /hbnb web app route"""
     return "HBNB"
 
