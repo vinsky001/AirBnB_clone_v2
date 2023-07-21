@@ -8,7 +8,7 @@ Routes:	/: display “Hello HBNB!”
     displays “Python ”, followed by the value of the text
     displays “n is a number” only if n is an integer
 """
-from flask import Flask
+from flask import Flask, render_template
 
 
 app = Flask(__name__)
