@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+i#!/usr/bin/python3
 """
 stats flask application
 must be listening on 0.0.0.0, port 5000
@@ -6,7 +6,7 @@ must be listening on 0.0.0.0, port 5000
 import os
 from flask import Flask, render_template
 from models.state import State
-from models import Storage
+from models import storage
 
 app = Flask(__name__)
 
