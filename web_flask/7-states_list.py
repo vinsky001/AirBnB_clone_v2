@@ -1,4 +1,4 @@
-i#!/usr/bin/python3
+#!/usr/bin/python3
 """
 stats flask application
 must be listening on 0.0.0.0, port 5000
