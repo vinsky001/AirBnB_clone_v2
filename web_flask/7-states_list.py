@@ -1,12 +1,12 @@
 #!/usr/bin/python3
 """
-stats flask application
-must be listening on 0.0.0.0, port 5000
+Starts a flask app
+listens to 0.0.0.0 on port 5000
 """
 import os
 from flask import Flask, render_template
-from models.state import State
 from models import storage
+from models.state import State
 
 app = Flask(__name__)
 
