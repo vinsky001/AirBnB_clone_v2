@@ -1,16 +1,16 @@
 #!/usr/bin/python3
 """ flask script """
 
-from flask import Flask
+from flask import Flask, render_template
 
 
 app = Flask(__name__)
 
 
-@app.route("/airbnb-onepage/", strict_slashes=False)
+@app.route("/", strict_slashes=False)
 def hello_route():
-    """function for web app route"""
-    return "Hello HBNB!"
+    """Returns a string route"""
+    return render_template("5-number.html")
 
 
 if __name__ == "__main__":
